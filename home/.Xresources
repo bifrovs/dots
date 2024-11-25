@@ -1,0 +1,21 @@
+#include ".Xresources.d/colors/vacme"
+
+Xft.dpi:				96
+Xft.antialias:			true
+Xft.hinting:			true
+Xft.autohint:			false
+Xft.hintstyle:			hintfull
+Xft.lcdfilter:			lcddefault
+
+URxvt.font:				xft:Agave:style=Regular:size=10
+URxvt.boldFont:			xft:Agave:style=Bold:size=10
+URxvt.italicFont:		xft:Agave:style=Italic:size=10
+
+URxvt.letterSpace:		0
+URxvt.lineSpace:		0
+URxvt.internalBorder:	4
+URxvt.scrollBar:		false
+URxvt.scrollBar_right:	false
+URxvt.cursorBlink:		false
+URxvt.cursorUnderline:	false
+URxvt.iso14755:			false

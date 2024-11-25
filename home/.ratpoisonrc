@@ -1,0 +1,42 @@
+escape C-r
+
+addhook key banish
+
+exec rpws init 4 -k
+
+set font xft:Lotion:style=Regular:size=10
+set fgcolor #121212
+set bgcolor #d7ffff
+set border 0
+set barborder 0
+set bargravity north
+set shrink
+
+bind colon exec
+bind exclam colon
+bind t exec urxvt
+bind f exec firefox
+bind c exec ratpoison -c "echo `ratpoison -c 'prompt calc: ' | bc`"
+bind C-j exec ratpoison -c "echo `cat /sys/class/power_supply/BAT0/capacity`% `cat /sys/class/power_supply/BAT0/status`"
+bind C-i exec ratpoison -c "echo `for value in State Connected\ network IPv4\ address; do iwctl station wlp3s0 show | tac | grep -m 1 "$value" | tr -s ' ' | cut -d' ' -f3,4 | xargs; done`"
+
+definekey top C-1 exec rpws 1
+definekey top C-2 exec rpws 2
+definekey top C-3 exec rpws 3
+definekey top C-4 exec rpws 4
+definekey top C-h focusleft
+definekey top C-j focusdown
+definekey top C-k focusup
+definekey top C-l focusright
+definekey top C-H exchangeleft
+definekey top C-J exchangedown
+definekey top C-K exchangeup
+definekey top C-L exchangeright
+definekey top XF86LaunchA exec scrot -s
+definekey top XF86MonBrightnessDown exec xbacklight -10
+definekey top XF86MonBrightnessUp exec xbacklight +10
+definekey top XF86KbdBrightnessDown exec kbdbacklight -dec 25
+definekey top XF86KbdBrightnessUp exec kbdbacklight -inc 25
+definekey top XF86AudioMute exec `[[ $(amixer get Master | grep off) ]] && amixer -q set Master unmute || amixer -q set Master mute`
+definekey top XF86AudioLowerVolume exec amixer -q set Master 1%- unmute
+definekey top XF86AudioRaiseVolume exec amixer -q set Master 1%+ unmute
