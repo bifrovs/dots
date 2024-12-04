@@ -33,10 +33,8 @@ definekey top C-J exchangedown
 definekey top C-K exchangeup
 definekey top C-L exchangeright
 definekey top XF86LaunchA exec scrot -s
-definekey top XF86MonBrightnessDown exec xbacklight -10
-definekey top XF86MonBrightnessUp exec xbacklight +10
-definekey top XF86KbdBrightnessDown exec kbdbacklight -dec 25
-definekey top XF86KbdBrightnessUp exec kbdbacklight -inc 25
+definekey top XF86MonBrightnessDown exec ybacklight-intel_backlight -dec 10
+definekey top XF86MonBrightnessUp exec ybacklight-intel_backlight -inc 10
 definekey top XF86AudioMute exec `[[ $(amixer get Master | grep off) ]] && amixer -q set Master unmute || amixer -q set Master mute`
 definekey top XF86AudioLowerVolume exec amixer -q set Master 1%- unmute
 definekey top XF86AudioRaiseVolume exec amixer -q set Master 1%+ unmute

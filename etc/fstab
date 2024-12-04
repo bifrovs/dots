@@ -1,0 +1,22 @@
+#
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>			    <type>	<options>					<dump>	<pass>
+
+efivars		/sys/firmware/efi/efivars   efivarfs	defaults					0	0
+/dev/sda1	/boot/efi		    vfat	defaults					0	0
+
+/dev/sda2	swap			    swap	defaults,noatime				0	0
+
+/dev/sda3	/			    ext4	defaults,noatime				0	1
+/dev/sda4	/usr			    ext4	defaults,noatime				0	2
+/dev/sda5	/var			    ext4	defaults,noatime				0	2
+/dev/sda6	/home			    ext4	defaults,noatime				0	2
+tmp		/tmp      		    tmpfs	defaults,noatime,nosuid,nodev,size=8G		0	0
+
+devpts		/dev/pts		    devpts	noexec,nosuid,gid=tty,mode=0620			0	0
+shm		/dev/shm		    tmpfs	defaults					0	0
+
+pkgmk		/var/ports/work		    tmpfs	defaults,noatime,uid=1000,size=20G		0	0
+
+# End of file

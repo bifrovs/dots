@@ -1,0 +1,18 @@
+#! /bin/bash
+
+# check if a command is provided
+
+if [ "$#" -lt 1 ]; then
+	echo "Usage: $0 <command> [arguments...]"
+	exit 1
+fi
+
+# environment variables for NVIDIA PRIME render offload
+
+export __NV_PRIME_RENDER_OFFLOAD=1
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export __VK_LAYER_NV_optimus=NVIDIA_only
+
+# execute the provided command with arguments
+
+"$@"

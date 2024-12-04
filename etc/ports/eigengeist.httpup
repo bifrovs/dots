@@ -1,9 +1,0 @@
-#
-# /etc/ports/eigengeist.httpup: eigengeist's port collection
-#
-
-ROOT_DIR=/usr/ports/eigengeist
-URL=https://raw.githubusercontent.com/eigengeist/ports/main
-
-# End of file
-

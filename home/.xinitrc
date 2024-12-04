@@ -12,7 +12,6 @@ xsetroot -solid "#afe0c2"
 
 xrdb -merge ~/.Xresources
 
-xbacklight =40
+picom &
 
 exec ratpoison
-# exec openbox-session
