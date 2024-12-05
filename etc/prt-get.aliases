@@ -2,3 +2,4 @@ jdk8-bin: openjdk8
 librsvg-compat: librsvg
 mariadb: mysql
 rust-bin: rust
+lilipod: docker
