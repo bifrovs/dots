@@ -1,0 +1,9 @@
+#
+# /etc/ports/daddylonglags.httpup: daddylonglags's port collection
+#
+
+ROOT_DIR=/usr/ports/daddylonglags
+URL=https://raw.githubusercontent.com/daddylonglags/ports/main
+
+# End of file
+
