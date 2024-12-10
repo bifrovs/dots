@@ -1,0 +1,9 @@
+#
+# /etc/ports/bifrons.httpup: bifrons's port collection
+#
+
+ROOT_DIR=/usr/ports/bifrons
+URL=https://raw.githubusercontent.com/bifrontes/ports/main
+
+# End of file
+
