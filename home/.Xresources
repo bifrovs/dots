@@ -1,15 +1,17 @@
-#include ".Xresources.d/colors/vacme"
+#include ".Xresources.d/colors/acme"
 
-Xft.dpi:				96
+Xft.dpi:				112
 Xft.antialias:			true
 Xft.hinting:			true
 Xft.autohint:			false
-Xft.hintstyle:			hintfull
+Xft.hintstyle:			hintslight
 Xft.lcdfilter:			lcddefault
 
-URxvt.font:				xft:Agave:style=Regular:size=10
-URxvt.boldFont:			xft:Agave:style=Bold:size=10
-URxvt.italicFont:		xft:Agave:style=Italic:size=10
+*.font:					xft:Agave:style=Regular:size=10
+*.boldFont:				xft:Agave:style=Bold:size=10
+*.italicFont:			xft:Agave:style=Italic:size=10
+
+st.font:				Agave:style=Regular:size=10:antialias=true
 
 URxvt.letterSpace:		0
 URxvt.lineSpace:		0
@@ -19,3 +21,8 @@ URxvt.scrollBar_right:	false
 URxvt.cursorBlink:		false
 URxvt.cursorUnderline:	false
 URxvt.iso14755:			false
+URxvt.perl-ext-common:	default, font-size
+URxvt.perl-lib:			/usr/lib/urxvt/perl
+URxvt.keysym.C-M-Up:	perl:font-size:increase
+URxvt.keysym.C-M-Down:	perl:font-size:decrease
+URxvt.keysym.C-M-0:		perl:font-size:reset

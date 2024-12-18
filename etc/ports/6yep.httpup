@@ -1,0 +1,9 @@
+#
+# /etc/ports/6yep.httpup: 6yep's port collection
+#
+
+ROOT_DIR=/usr/ports/6yep
+URL=https://raw.githubusercontent.com/6yep/ports/main
+
+# End of file
+

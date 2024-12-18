@@ -1,0 +1,3 @@
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nosgx loglevel=3 acpi_osi=Linux acpi_backlight=native cgroup_no_v1=all net.ifnames=1"
+GRUB_SAVEDEFAULT=true
+GRUB_DEFAULT=saved

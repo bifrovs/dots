@@ -30,7 +30,7 @@ nnoremap BB :Buffers<CR>
 nnoremap LL :Lines<CR>
 nnoremap <silent> <Esc> :nohlsearch<CR><Esc>
 
-color vacme
+color acme
 highlight Normal ctermbg=NONE guibg=NONE
 
 au BufNewFile,BufRead *Pkgfile set filetype=sh

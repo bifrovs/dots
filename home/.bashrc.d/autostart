@@ -1,3 +1,2 @@
 set -o vi
-clear
 # screen -DR
